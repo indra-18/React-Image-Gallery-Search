@@ -22,7 +22,7 @@
     justify-content: space-between;
 }
 
-#buttons > button {
+#buttons > a > button {
     background-color: black;
     color: #ffff;
 }

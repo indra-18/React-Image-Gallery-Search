@@ -2,7 +2,6 @@ import React, { useContext } from 'react'
 import { LoadRandomImages } from '../http-services/flickrApi'
 import '../imageGallery.css'
 import { ImageContext } from '../contexts/api-context'
-import '../imageGallery.css'
 export default function Gallery() {
   const data = LoadRandomImages()
   const { searchedImages, keyWord } = useContext(ImageContext)

@@ -1,10 +1,10 @@
 import React, { useContext, useState } from 'react'
 import '../imageGallery.css'
 import { ImageContext } from '../contexts/api-context'
-
+import { Link } from 'react-router-dom'
 export default function Inputs() {
   const [searchItem,setSearchItem] = useState('')
-  const { searchMethod } = useContext(ImageContext)
+  const { searchMethod,  } = useContext(ImageContext)
 
 
   return (
@@ -27,26 +27,34 @@ export default function Inputs() {
         >search</button>
       </div>
       <div id='buttons'>
-        <button
-                onClick={() => {
-                  searchMethod('mountain')
-                }}
-        >Mountain</button>
-        <button
-                onClick={() => {
-                  searchMethod('beaches')
-                }}
-        >Beaches</button>
-        <button
-                onClick={() => {
-                  searchMethod('birds')
-                }}
-        >Birds</button>
-        <button
-                onClick={() => {
-                  searchMethod('food')
-                }}
-        >Food</button>
+        <Link to='/mountain'>
+          <button
+                  onClick={() => {
+                    searchMethod('Mountain')
+                  }}
+          >Mountain</button>
+        </Link>
+        <Link to='/beaches'>
+          <button
+                  onClick={() => {
+                    searchMethod('Beaches')
+                  }}
+          >Beaches</button>
+        </Link>
+        <Link to='/birds'>
+          <button
+                  onClick={() => {
+                    searchMethod('Birds')
+                  }}
+          >Birds</button>
+        </Link>
+        <Link to='/food'>
+          <button
+                  onClick={() => {
+                    searchMethod('Food')
+                  }}
+          >Food</button>
+        </Link>
       </div>
     </div>
   )

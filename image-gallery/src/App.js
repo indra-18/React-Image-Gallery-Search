@@ -1,5 +1,5 @@
 import AppRouter from "./Routers/AppRouter";
-import { ImageContextProvider } from './components/contexts/api-context'
+import { ImageContextProvider } from "./components/contexts/api-context";
 function App() {
   return (
     <div >
