@@ -14,7 +14,12 @@ export default function Inputs() {
         id='search-box' 
         type='search' 
         name='search' 
-        placeholder='Search...' 
+        placeholder='Search...'
+        onKeyDown={(e) => {
+          if (e.key === "Enter") {
+            searchMethod(searchItem)
+          }
+        }} 
         onChange={(e) => {
           setSearchItem(e.target.value)
         }}
