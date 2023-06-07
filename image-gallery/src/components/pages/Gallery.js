@@ -10,15 +10,15 @@ export default function Gallery() {
       <div id="gallery">
         {keyWord
           ? searchedImages.map((image) => (
-              <div id="img-card">
-                <a href={image.urls.small} key={image.id}>
+              <div id="img-card" key={image.id}>
+                <a href={image.urls.small}>
                   <img src={image.urls.thumb} alt={image.alt_description} />
                 </a>
               </div>
             ))
           : data.map((image) => (
               <div id="img-card" key={image.id}>
-                <a href={image.urls.small} key={image.id}>
+                <a href={image.urls.small}>
                   <img src={image.urls.thumb} alt={image.alt_description} />
                 </a>
               </div>
