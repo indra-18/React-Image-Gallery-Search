@@ -42,9 +42,10 @@
 #gallery {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+    justify-content: center;
 }
 
 #img-card {
@@ -59,6 +60,12 @@
 }
 
 @media screen and (max-width: 792px) {
+    #app-container {
+        margin: 0 auto;
+        width: 95vw;
+        height: 99vh;
+    }
+
     #search-container {
         margin: 0 10%;
         display: flex;
@@ -89,7 +96,7 @@
         margin: 0 10%;
         display: grid;
         grid-template-columns: auto auto;
-        grid-column-gap: 20px;
+        grid-column-gap: 10px;
         grid-row-gap: 20px;
         justify-content: center;
     }
