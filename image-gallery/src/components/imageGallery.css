@@ -49,7 +49,7 @@
 #img-card {
     max-width: 130px;
     max-height: 130px;
-
+    border-radius: 50px;
 }
 #img-card img {
     width: 100%;

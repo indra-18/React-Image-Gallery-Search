@@ -1,5 +1,5 @@
 import React, { createContext, useState } from "react";
-import { SearchByKeyword } from "../http-services/flickrApi";
+import { SearchByKeyword } from "../http-services/unsplashApi";
 
 const ImageContext = createContext();
 
